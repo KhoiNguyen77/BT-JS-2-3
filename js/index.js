@@ -36,7 +36,7 @@ document.getElementById('quy-doi').onclick = function () {
     var soQuyDoi = 0;
     var soUSD = document.getElementById('so-USD').value;
     soQuyDoi = soUSD * 23500;
-    document.getElementById('ket-qua-b3').innerHTML = soQuyDoi;
+    document.getElementById('ket-qua-b3').innerHTML = Intl.NumberFormat('vn-VN').format(soQuyDoi);
 }
 // Bài 4
 document.getElementById('tinh-dt-cv').onclick = function () {
